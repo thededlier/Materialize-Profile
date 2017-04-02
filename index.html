@@ -2,148 +2,180 @@
 <html>
     <head>
         <title>Rohan Anand</title>
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function(){
+                $('.preloader-background').delay(1000).fadeOut('slow');
+
+                $('.preloader-wrapper')
+                    .delay(1000)
+                    .fadeOut(function() {
+                        $("body").removeClass("preload");
+                        window.sr = ScrollReveal();
+                        sr.reveal(".card", {delay:300,easing:'ease',scale:0});
+                    });
+            });
+        </script>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/materialize.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
         <link rel="stylesheet" href="css/style.css">
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
-    <body>
-        <div id="particles-js">
-
+    <body class="preload">
+        <div class="preloader-background">
+        	<div class="preloader-wrapper big active">
+        		<div class="spinner-layer spinner-blue-only">
+        			<div class="circle-clipper left">
+        				<div class="circle"></div>
+        			</div>
+        			<div class="gap-patch">
+        				<div class="circle"></div>
+        			</div>
+        			<div class="circle-clipper right">
+        				<div class="circle"></div>
+        			</div>
+        		</div>
+        	</div>
         </div>
 
+        <div class="main">
 
-        <div class="parallax-container">
-            <div class="parallax">
-                <img src="img/cover.jpg">
-                <div class="row overlay">
-                    <div class="col s12 m6 l6 offset-m3 offset-l3">
-                        <div class="card transparent z-depth-0 white-text animated fadeInDown">
-                            <h3>[ Hello, I am Rohan ]</h3>
-                            <div class="chip animated fadeInRight">
-                                <span>Designer</span>
-                            </div>
-                            <div class="chip animated fadeInUp">
-                                <span>Developer</span>
-                            </div>
-                            <div class="chip animated fadeInLeft">
-                                <span>VFX Artist</span>
+            <div id="particles-js">
+
+            </div>
+
+
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="img/cover.jpg">
+                    <div class="row overlay">
+                        <div class="col s12 m6 l6 offset-m3 offset-l3">
+                            <div class="card transparent z-depth-0 white-text animated fadeInDown">
+                                <h3><span class="color-blink">[</span> Hello, I am Rohan <span class="color-blink">]</span></h3>
+                                <div class="chip animated fadeInRight">
+                                    <span>Designer</span>
+                                </div>
+                                <div class="chip animated fadeInUp">
+                                    <span>Developer</span>
+                                </div>
+                                <div class="chip animated fadeInLeft">
+                                    <span>VFX Artist</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+            <div class="row navbar animated fadeInDown">
+                <div class="head">
+                    <div class="col s2 m2 l2 profile">
+                        <img class="responsive-img circle" src="img/profile.jpg">
+                    </div>
+
+                    <div class="col s4 m4 l4">
+                        <h4>ROHAN ANAND</h4>
+                        <h6>Full Stack Web Developer and VFX Artist</h6>
+
+                        <button class="btn waves-effect waves-light tooltipped grey darken-2" data-position="right" type="button" data-delay="0" data-tooltip="Download Resume" name="action">
+                            <i class="material-icons">file_download</i>
+                            <span style="vertical-align:top;">Resume</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row container">
+
+                <div class="col s12 m6 l6">
+                    <div class="card col s12 m12 l12 white black-text">
+                        <div class="col s12 m12 l12 text-center border-bottom">
+                            <h4>Projects</h4>
+                        </div>
+                        <div class="col s12 m12 l12">
+                            <div class="row">
+                                <div class="col m2 l2 hide-on-small-only">
+                                    <h5>1</h5>
+                                </div>
+                                <div class="col m10 l10 border-bottom">
+                                    <a class="head-link black-text" href="">Header</a>
+                                    <p>Content</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col s12 m12 l12 white black-text">
+                        <div class="col s12 m12 l12 text-center border-bottom">
+                            <h4>Skills</h4>
+                        </div>
+                        <div class="col s12 m12 l12">
+                            <div class="row">
+                                <div class="col m2 l2 hide-on-small-only">
+                                    <h5>1</h5>
+                                </div>
+                                <div class="col m10 l10 border-bottom">
+                                    <a class="head-link black-text" href="">Header</a>
+                                    <p>Content</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l6">
+                    <div class="card col s12 m12 l12 white black-text">
+                        <div class="col s12 m12 l12 text-center border-bottom">
+                            <h4>Work Experience</h4>
+                        </div>
+                        <div class="col s12 m12 l12">
+                            <div class="row">
+                                <div class="col m2 l2 hide-on-small-only">
+                                    <h5>1</h5>
+                                </div>
+                                <div class="col m10 l10 border-bottom">
+                                    <h5>Header</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col s12 m12 l12 white black-text">
+                        <div class="col s12 m12 l12 text-center border-bottom">
+                            <h4>Extra Curricular Activities</h4>
+                        </div>
+                        <div class="col s12 m12 l12">
+                            <div class="row">
+                                <div class="col m2 l2 hide-on-small-only">
+                                    <h5>1</h5>
+                                </div>
+                                <div class="col m10 l10 border-bottom">
+                                    <h5>Header</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-copyright">
+                    <div class="container grey-text text-lighten-4">
+                        &copy; 2017 Rohan Anand
+                        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                    </div>
+                </div>
+            </footer>
+
         </div>
-
-
-        <div class="row navbar animated fadeInDown">
-            <div class="head">
-                <div class="col s2 m2 l2 profile">
-                    <img class="responsive-img circle" src="img/profile.jpg">
-                </div>
-
-                <div class="col s4 m4 l4">
-                    <h4>ROHAN ANAND</h4>
-                    <h6>Full Stack Web Developer and VFX Artist</h6>
-
-                    <button class="btn waves-effect waves-light tooltipped grey darken-2" data-position="right" type="button" data-delay="0" data-tooltip="Download Resume" name="action">
-                        <i class="material-icons">file_download</i>
-                        <span style="vertical-align:top;">Resume</span>
-                    </button>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="row container">
-
-            <div class="col s12 m6 l6">
-                <div class="card col s12 m12 l12 white black-text">
-                    <div class="col s12 m12 l12 text-center border-bottom">
-                        <h4>Projects</h4>
-                    </div>
-                    <div class="col s12 m12 l12">
-                        <div class="row">
-                            <div class="col m2 l2 hide-on-small-only">
-                                <h5>1</h5>
-                            </div>
-                            <div class="col m10 l10 border-bottom">
-                                <a class="head-link black-text" href="">Header</a>
-                                <p>Content</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col s12 m12 l12 white black-text">
-                    <div class="col s12 m12 l12 text-center border-bottom">
-                        <h4>Skills</h4>
-                    </div>
-                    <div class="col s12 m12 l12">
-                        <div class="row">
-                            <div class="col m2 l2 hide-on-small-only">
-                                <h5>1</h5>
-                            </div>
-                            <div class="col m10 l10 border-bottom">
-                                <a class="head-link black-text" href="">Header</a>
-                                <p>Content</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col s12 m6 l6">
-                <div class="card col s12 m12 l12 white black-text">
-                    <div class="col s12 m12 l12 text-center border-bottom">
-                        <h4>Work Experience</h4>
-                    </div>
-                    <div class="col s12 m12 l12">
-                        <div class="row">
-                            <div class="col m2 l2 hide-on-small-only">
-                                <h5>1</h5>
-                            </div>
-                            <div class="col m10 l10 border-bottom">
-                                <h5>Header</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card col s12 m12 l12 white black-text">
-                    <div class="col s12 m12 l12 text-center border-bottom">
-                        <h4>Extra Curricular Activities</h4>
-                    </div>
-                    <div class="col s12 m12 l12">
-                        <div class="row">
-                            <div class="col m2 l2 hide-on-small-only">
-                                <h5>1</h5>
-                            </div>
-                            <div class="col m10 l10 border-bottom">
-                                <h5>Header</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <footer class="footer">
-            <div class="footer-copyright">
-                <div class="container grey-text text-lighten-4">
-                    &copy; 2017 Rohan Anand
-                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-                </div>
-            </div>
-        </footer>
-
         <script src="./js/particles.min.js"></script>
         <script src="./js/app.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/scrollreveal.min.js"></script>
         <script>
             $(document).ready(function(){
                 $('.parallax').parallax();

@@ -9,6 +9,27 @@ canvas {
     z-index: -1;
 }
 
+.preloader-background {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #eee;
+
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
 #particles-js {
   width: 100%;
   height: 100%;
@@ -62,4 +83,22 @@ canvas {
 .head-link {
     font-size: 1.5em;
     border-bottom: 1px dotted #000;
+}
+
+.color-blink {
+    animation-name: color-blink-anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color-blink-anim {
+    0% {
+        color: #ffffff;
+    }
+    50% {
+        color: #000000;
+    }
+    100% {
+        color: #ffffff;
+    }
 }
